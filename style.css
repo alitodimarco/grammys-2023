@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'France';
+    src: url(./fuentes/France.ttf);
+}
+@font-face {
+    font-family: 'Around';
+    src: url(./fuentes/Around.ttf);
+}
+@font-face {
+    font-family: 'Rhe';
+    src: url(./fuentes/Rheiborn_Sans_Clean.ttf);
+}
+@font-face {
+    font-family: 'Flor41';
+    src: url(./fuentes/Florr41.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Rhe';
+    font-size: 48px;
+}
+
+.imagenesPortada{
+    width: 70px;
+}
+ol{
+    list-style: none;
+}
+
+
+
+.botonesNav{
+    display: inline;
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+[class="botonesNav"] li{
+    margin-right: 20px;
+    font-size: 24px;
+    margin-top: 15px;
+    color: white;
+    border: 2px solid white;
+    padding: 5px 7px;
+    border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+[class="botonesNav"] li:hover{
+    background-color: crimson;
+
+}
+
+.tituloGrammyNav{
+    float: left;
+    color: white;
+    margin-left: 50px;
+    font-size: 70px;
+    
+}
+#title{
+    text-align: center;
+    clear: both;
+    background-color: white;
+    height: 280px;
+    padding-top: 45px;
+
+}
+.bienvenida{
+    margin: 0 40px;
+    font-size: 26px;
+    border-left: solid black 17em;    
+    border-right: solid black 450px;    
+}
+.tituloGrammys{
+    font-size: 168px;
+    text-align: center;
+    letter-spacing: 20px;
+
+}
+
+.container{
+    background-color: rgb(15, 15, 15);
+    height: 80px;
+}
+.sombraTitulo{
+    font-size: 168px;
+    text-align: center;
+    letter-spacing: 20px;
+    color: crimson;
+    position: relative;
+    bottom: 200px;
+    
+}
+#info, .seccion1a , .seccion1b , .seccion1c, .seccion1d , .seccion1e{
+    float: right;
+    font-family: 'FLor41';
+}
+
+.seccion2, .seccion2a , .seccion2b , .seccion2c, .seccion2d , .seccion2e{
+    float: right;
+}
+.seccion3, .seccion3a , .seccion3b , .seccion3c, .seccion3d , .seccion3e{
+    float: right;
+    margin-right: 40px;
+}
+
+.seccion3a, .seccion3c, .seccion3e{
+    margin-top: 10px;
+}
+
+
+hr{
+    border-bottom: 3px solid;
+    clear: both;
+}
+footer{
+    clear: both;
+}
