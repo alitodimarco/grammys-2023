@@ -26,6 +26,7 @@
 .imagenesPortada{
     width: 70px;
 }
+
 ol{
     list-style: none;
 }
@@ -39,7 +40,7 @@ ol{
     justify-content: space-between;
     margin-top: 10px;
 }
-[class="botonesNav"] li{
+[class="botonesNav"] a{
     margin-right: 20px;
     font-size: 24px;
     margin-top: 15px;
@@ -49,10 +50,10 @@ ol{
     border-radius: 3px;
     border-radius: 3px;
     cursor: pointer;
+    text-decoration: none;
 }
-[class="botonesNav"] li:hover{
+[class="botonesNav"] a:hover{
     background-color: crimson;
-
 }
 
 .tituloGrammyNav{
@@ -74,7 +75,7 @@ ol{
     margin: 0 40px;
     font-size: 26px;
     border-left: solid black 17em;    
-    border-right: solid black 450px;    
+    border-right: solid black 18em;    
 }
 .tituloGrammys{
     font-size: 168px;
@@ -93,24 +94,46 @@ ol{
     letter-spacing: 20px;
     color: crimson;
     position: relative;
-    bottom: 200px;
-    
+    bottom: 200px;    
 }
+
+
 #info, .seccion1a , .seccion1b , .seccion1c, .seccion1d , .seccion1e{
     float: right;
     font-family: 'FLor41';
+    margin-top: 5px;
 }
+.seccion1a, .seccion1c, .seccion1e{
+    margin-top: 13px;
+}
+
 
 .seccion2, .seccion2a , .seccion2b , .seccion2c, .seccion2d , .seccion2e{
     float: right;
+    margin-top: 5px;
 }
+.seccion2b, .seccion2d{
+    margin-top: 15px;
+}
+
+
 .seccion3, .seccion3a , .seccion3b , .seccion3c, .seccion3d , .seccion3e{
     float: right;
-    margin-right: 40px;
+    margin-top: 5px;
 }
 
 .seccion3a, .seccion3c, .seccion3e{
-    margin-top: 10px;
+    margin-top: 15px;
+}
+
+.seccion3a{
+    margin-right: 400px;
+}
+.seccion2a{
+    margin-right: 480px;
+}
+.seccion1a{
+    margin-right: 250px;
 }
 
 
@@ -120,4 +143,52 @@ hr{
 }
 footer{
     clear: both;
+}
+.realizadoPor{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: crimson;
+    padding: 2px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 30px;
+
+}
+
+@media screen and (max-width: 1244px) {
+    .tituloGrammys {
+        font-size: 70px;
+        letter-spacing: 5px;
+    }
+
+    .sombraTitulo {
+        font-size: 70px;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+    }
+
+    .bienvenida {
+        margin: 0 5px;
+        font-size: 20px;
+        border-left: solid black 2.5em;
+        border-right: solid black 2.5em;
+    }
+
+    .realizadoPor {
+        position: static;
+    }
+
+    .botonesNav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    [class="botonesNav"] a {
+        margin: 10px 0;
+    }
+
+    .info {
+        margin: 10px;
+    }
 }

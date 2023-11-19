@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+    <link rel="stylesheet" href="loginStyle.css">
+</head>
+
+<body>
+    <div class="formularioEntero">
+        <!-- aqui empieza el formulario -->
+        <form>
+            <h2>Formulario de votación en el evento Gramys Latinos Sevilla 2023</h2>
+            <!-- rellenar los datos personales -->
+            <h3>Datos personales</h3>
+                <label for="nombre1" class="nombreUsuario1">Nombre: </label>
+                <br>
+                <input type="text" id="nombre1" autofocus class="nombreUsuario">
+                <br>
+                <label for="apellido1" class="apellidoUsuario1">Apellidos: </label>
+                <br>
+                <input type="text" id="apellido1" class="apellidoUsuario">
+                <br>
+                <label for="email1" class="emailUsuario1">Email: </label>
+                <br>
+                <input type="email" id="email1" class="emailUsuario">
+            <br>
+            <br>
+            <!-- elige el tipo de sexo -->
+            <label for="sexo2" class="sexoUsuario">Sexo:</label>
+            <br>
+            <br>
+            <input type="radio" name="comoEres" id="hombre2">
+            <label for="hombre2">Hombre</label>
+            <br>
+            <input type="radio" name="comoEres" id="mujer2">
+            <label for="mujer2">Mujer</label>
+            <br>
+            <br>
+            <h3>Preferencias musicales:</h3>
+            <select size="4">
+                <option value="pop">Pop</option>
+                <option value="Rock">Rock</option>
+                <option value="Rap/hip-hop">Rap/hip-hop</option>
+                <option value="Alternativa">Alternativa</option>
+            </select>
+            <br>
+            <br>
+            <!-- artistas -->
+            <h3>Puntuación</h3>
+            <label for="artista1">Elige artista</label>
+            <select>
+                <option value="biza">Bizarrap</option>
+                <option value="AA">Anuel</option>
+                <option value="JC">JC Reyes</option>
+            </select>
+            <label>Puntuación (Entre 1 y 5)</label>
+            <input type="number" max="5" min="1">
+            <br>
+            <br>
+            <h3>Observaciones:</h3>
+            <textarea id="reseña" cols="100px" rows="4">
+                Indique aquí sus observaciones para la organización del evento
+            </textarea>
+            <br>
+            <br>
+            <input type="checkbox" id="acepto">
+            <label for="acepto" class="condicionesFinal">Acepto las condiciones de participación en el concurso</label>
+            <br>
+            <br>
+            <input type="submit" name="" id="">
+
+
+        </form>
+        <!-- aqui termina -->
+    </div>
+
+
+
+
+
+</body>
+
+</html>
